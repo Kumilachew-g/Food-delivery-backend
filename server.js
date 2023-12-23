@@ -20,26 +20,6 @@ app.get('/', (req, res) => {
   res.sendFile('index.html', { root: path.join(__dirname, 'public') });
 });
 
-// app.get('/api/foods', async (req, res) => {
-//   await food
-//     .find({})
-//     .then((foods) => {
-//       res.send(foods);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// });
-
-// app.get('/foods', async (req, res) => {
-//   try {
-//     const foods = await food.find({});
-//     res.send(foods);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// });
-
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
